@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A364A0F71B1E52BF006DDBA1 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A364A0F61B1E52BF006DDBA1 /* HeaderView.xib */; };
 		A39A9A4F1B165D4100C5140D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A9A4E1B165D4100C5140D /* main.m */; };
 		A39A9A521B165D4100C5140D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A9A511B165D4100C5140D /* AppDelegate.m */; };
 		A39A9A541B165D4100C5140D /* Homepwner-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = A39A9A531B165D4100C5140D /* Homepwner-Prefix.pch */; };
 		A39A9A561B165D4100C5140D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39A9A551B165D4100C5140D /* Images.xcassets */; };
 		A39A9A591B165D4100C5140D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39A9A571B165D4100C5140D /* LaunchScreen.xib */; };
 		A39A9A651B165D4200C5140D /* HomepwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A9A641B165D4200C5140D /* HomepwnerTests.m */; };
+		A39A9A731B16602700C5140D /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A9A721B16602700C5140D /* ItemsViewController.m */; };
+		A39A9A791B16645100C5140D /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A9A781B16645100C5140D /* ItemStore.m */; };
+		A39A9A7C1B1666F400C5140D /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A9A7B1B1666F400C5140D /* BNRItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A364A0F61B1E52BF006DDBA1 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		A39A9A491B165D4100C5140D /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39A9A4D1B165D4100C5140D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A39A9A4E1B165D4100C5140D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,6 +42,12 @@
 		A39A9A5E1B165D4200C5140D /* HomepwnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39A9A631B165D4200C5140D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A39A9A641B165D4200C5140D /* HomepwnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnerTests.m; sourceTree = "<group>"; };
+		A39A9A711B16602700C5140D /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemsViewController.h; path = ../ItemsViewController.h; sourceTree = "<group>"; };
+		A39A9A721B16602700C5140D /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemsViewController.m; path = ../ItemsViewController.m; sourceTree = "<group>"; };
+		A39A9A771B16645100C5140D /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
+		A39A9A781B16645100C5140D /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
+		A39A9A7A1B1666F400C5140D /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		A39A9A7B1B1666F400C5140D /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,13 @@
 				A39A9A531B165D4100C5140D /* Homepwner-Prefix.pch */,
 				A39A9A551B165D4100C5140D /* Images.xcassets */,
 				A39A9A571B165D4100C5140D /* LaunchScreen.xib */,
+				A39A9A711B16602700C5140D /* ItemsViewController.h */,
+				A39A9A721B16602700C5140D /* ItemsViewController.m */,
+				A364A0F61B1E52BF006DDBA1 /* HeaderView.xib */,
+				A39A9A7A1B1666F400C5140D /* BNRItem.h */,
+				A39A9A7B1B1666F400C5140D /* BNRItem.m */,
+				A39A9A771B16645100C5140D /* ItemStore.h */,
+				A39A9A781B16645100C5140D /* ItemStore.m */,
 				A39A9A4C1B165D4100C5140D /* Supporting Files */,
 			);
 			path = Homepwner;
@@ -197,6 +215,7 @@
 				A39A9A541B165D4100C5140D /* Homepwner-Prefix.pch in Resources */,
 				A39A9A591B165D4100C5140D /* LaunchScreen.xib in Resources */,
 				A39A9A561B165D4100C5140D /* Images.xcassets in Resources */,
+				A364A0F71B1E52BF006DDBA1 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39A9A731B16602700C5140D /* ItemsViewController.m in Sources */,
 				A39A9A521B165D4100C5140D /* AppDelegate.m in Sources */,
+				A39A9A7C1B1666F400C5140D /* BNRItem.m in Sources */,
 				A39A9A4F1B165D4100C5140D /* main.m in Sources */,
+				A39A9A791B16645100C5140D /* ItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +424,7 @@
 				A39A9A6A1B165D4200C5140D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A39A9A6B1B165D4200C5140D /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +433,7 @@
 				A39A9A6D1B165D4200C5140D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

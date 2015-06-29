@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ItemsViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    //Create a ItemsViewController
+    ItemsViewController *ivc = [[ItemsViewController alloc]init];
+    
+    //Place ItemsViewController table view in the window hierarchy
+    self.window.rootViewController = ivc;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
