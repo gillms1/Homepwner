@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A364A0F71B1E52BF006DDBA1 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A364A0F61B1E52BF006DDBA1 /* HeaderView.xib */; };
+		A38E7CAC1B41DD31004D8F70 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38E7CAA1B41DD31004D8F70 /* DetailViewController.m */; };
+		A38E7CAD1B41DD31004D8F70 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38E7CAB1B41DD31004D8F70 /* DetailViewController.xib */; };
 		A39A9A4F1B165D4100C5140D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A9A4E1B165D4100C5140D /* main.m */; };
 		A39A9A521B165D4100C5140D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A9A511B165D4100C5140D /* AppDelegate.m */; };
 		A39A9A541B165D4100C5140D /* Homepwner-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = A39A9A531B165D4100C5140D /* Homepwner-Prefix.pch */; };
@@ -31,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		A364A0F61B1E52BF006DDBA1 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		A38E7CA91B41DD31004D8F70 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A38E7CAA1B41DD31004D8F70 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A38E7CAB1B41DD31004D8F70 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		A39A9A491B165D4100C5140D /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39A9A4D1B165D4100C5140D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A39A9A4E1B165D4100C5140D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +73,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A38E7CA81B41DCD0004D8F70 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A39A9A711B16602700C5140D /* ItemsViewController.h */,
+				A39A9A721B16602700C5140D /* ItemsViewController.m */,
+				A38E7CA91B41DD31004D8F70 /* DetailViewController.h */,
+				A38E7CAA1B41DD31004D8F70 /* DetailViewController.m */,
+				A38E7CAB1B41DD31004D8F70 /* DetailViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A39A9A401B165D4100C5140D = {
 			isa = PBXGroup;
 			children = (
@@ -94,13 +111,12 @@
 				A39A9A531B165D4100C5140D /* Homepwner-Prefix.pch */,
 				A39A9A551B165D4100C5140D /* Images.xcassets */,
 				A39A9A571B165D4100C5140D /* LaunchScreen.xib */,
-				A39A9A711B16602700C5140D /* ItemsViewController.h */,
-				A39A9A721B16602700C5140D /* ItemsViewController.m */,
 				A364A0F61B1E52BF006DDBA1 /* HeaderView.xib */,
 				A39A9A7A1B1666F400C5140D /* BNRItem.h */,
 				A39A9A7B1B1666F400C5140D /* BNRItem.m */,
 				A39A9A771B16645100C5140D /* ItemStore.h */,
 				A39A9A781B16645100C5140D /* ItemStore.m */,
+				A38E7CA81B41DCD0004D8F70 /* ViewControllers */,
 				A39A9A4C1B165D4100C5140D /* Supporting Files */,
 			);
 			path = Homepwner;
@@ -214,6 +230,7 @@
 			files = (
 				A39A9A541B165D4100C5140D /* Homepwner-Prefix.pch in Resources */,
 				A39A9A591B165D4100C5140D /* LaunchScreen.xib in Resources */,
+				A38E7CAD1B41DD31004D8F70 /* DetailViewController.xib in Resources */,
 				A39A9A561B165D4100C5140D /* Images.xcassets in Resources */,
 				A364A0F71B1E52BF006DDBA1 /* HeaderView.xib in Resources */,
 			);
@@ -238,6 +255,7 @@
 				A39A9A7C1B1666F400C5140D /* BNRItem.m in Sources */,
 				A39A9A4F1B165D4100C5140D /* main.m in Sources */,
 				A39A9A791B16645100C5140D /* ItemStore.m in Sources */,
+				A38E7CAC1B41DD31004D8F70 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

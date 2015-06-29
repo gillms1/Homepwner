@@ -22,11 +22,29 @@
 {
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
+        UINavigationItem *navItem = self.navigationItem;
+        navItem.title = @"Homepwner";
         
+        //Create a new bar button item that will send
+        // addNewItem: to ItemsViewController
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem:)];
+        
+        //set this bar button item as the right item in the navigationItem
+        navItem.rightBarButtonItem = bbi;
+        
+        navItem.leftBarButtonItem = self.editButtonItem;
         
     }
     
     return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+    
 }
 
 - (void)viewDidLoad
@@ -59,6 +77,7 @@
     return cell;
 }
 
+/*REPLACED IN INIT METHOD
 -(UIView *)headerView
 {
     //If you have not loaded the headerview yet
@@ -68,7 +87,7 @@
     }
     
     return _headerView;
-}
+}*/
 
 -(IBAction)addNewItem:(id)sender
 {
@@ -86,6 +105,7 @@
     
 }
 
+/* REPLACED WITH LEFT BUTTON BAR ITEM IN INIT METHOD
 -(IBAction)toggleEditingMode:(id)sender
 {
     //If you are currently in editing mode
@@ -106,7 +126,7 @@
     }
     
     
-}
+}*/
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -133,6 +153,21 @@
 {
     
     return @"Remove";
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    DetailViewController *dvc = [[DetailViewController alloc]init];
+    
+    NSArray *items = [[ItemStore sharedStore] allItems];
+    BNRItem *selectedItem = items[indexPath.row];
+    
+    //Give the dvc a pointer to the item object in row
+    dvc.item = selectedItem;
+    
+    //Push the DVC onto the top of the navigation controllers stack
+    [self.navigationController pushViewController:dvc animated:YES];
+    
 }
 
 @end
